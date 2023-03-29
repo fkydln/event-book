@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+    <title>Event Book - Event Keeper</title>
+  </head>
+  <body>
+    <h1>Welcome to the Event Keeper</h1>
+    <p>
+      Please submit your event using the form below to add them to our record.
+    </p>
+    <div class="container">
+      <form onsubmit="return false">
+        <table>
+          <tr>
+            <th>Event Details</th>
+          </tr>
+          <tr>
+            <td><label for="eventName">Event Name:</label></td>
+            <td><input type="text" id="eventName" /></td>
+          </tr>
+          <tr>
+            <td><label for="eventDate">Event Date:</label></td>
+            <td><input type="date" id="eventDate" /></td>
+          </tr>
+          <tr>
+            <td><label for="eventTier">Event Tier:</label></td>
+            <td><input type="text" id="eventTier" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="eventVendors">Vendors Used:</label></td>
+            <td>
+              <input type="checkbox" name="theSwitch" id="theSwitch" />
+              <label for="theSwitch">The Switch</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" name="captionMax" id="captionMax" />
+              <label for="captionMax">3Play Media</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="button" value="Submit" onclick="submitForm()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
